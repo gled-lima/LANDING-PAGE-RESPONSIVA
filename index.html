@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio e Conteúdos</title>
+    <title>Sobre Mim - Portfólio e Conteúdos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,12 +62,12 @@
 <body>
 
 <header>
-    <h1>Gledson Lima - Portifólio e Contéudos</h1>
+    <h1>Meu Site - Sobre Mim, Portfólio e Conteúdos</h1>
 </header>
 
 <nav>
     <a href="#sobre">Sobre Mim</a>
-    <a href="#conteudos">Matérias Aprendidas</a>
+    <a href="#conteudos">Conteúdos Aprendidos</a>
     <a href="#portfolio">Portfólio</a>
     <a href="#contato">Contato</a>
 </nav>
@@ -76,8 +76,11 @@
     <!-- SOBRE MIM -->
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <img src="20240421_173550.jpg" alt="Minha Foto" width="180">
-        <p>Olá! Meu nome é Gledson Lima. Sou estudante da matéria de Tecnologias Web no INSTITUTO FEDERAL DE ALAGOAS e este site representa o acumulado em conhecimento desenvolvido dos principais assuntos da disciplina, com o objetivo de trazer um overview geral de tudo que aprendi, mesmo que de maneira objetiva.
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="20240421_173550.jpg" alt="Minha Foto" width="180">
+            <p>Olá! Meu nome é Gledson Lima. Sou estudante da matéria de Tecnologias Web no INSTITUTO FEDERAL DE ALAGOAS e este site representa o acumulado em conhecimento desenvolvido dos principais assuntos da disciplina, com o objetivo de trazer um overview geral de tudo que aprendi, mesmo que de maneira objetiva.</p>
+        </div>
+    </section>
 
     <!-- CONTEÚDOS APRENDIDOS -->
     <section id="conteudos">
@@ -92,6 +95,7 @@
             <li>Inserção de imagens e links</li>
             <li>Tabelas</li>
             <li>Formulários</li>
+            <li>Multimídia (vídeo e áudio)</li>
         </ul>
 
         <h3>Tabela de Conhecimentos</h3>
@@ -112,7 +116,21 @@
                 <td>Formulários</td>
                 <td>Intermediário</td>
             </tr>
+            <tr>
+                <td>Multimídia</td>
+                <td>Básico</td>
+            </tr>
         </table>
+
+        <h3>Vídeo Exemplo</h3>
+        <video controls width="400">
+            <source src="video-exemplo.mp4" type="video/mp4">
+        </video>
+
+        <h3>Áudio Exemplo</h3>
+        <audio controls>
+            <source src="audio-exemplo.mp3" type="audio/mpeg">
+        </audio>
     </section>
 
     <!-- PORTFÓLIO -->
@@ -121,9 +139,9 @@
         <p>Aqui estão alguns projetos que desenvolvi:</p>
 
         <ol>
-            <li><strong>Projeto 1:</strong> Estrutura Básica de uma página.</li>
-            <li><strong>Projeto 2:</strong> Estrutura de uma página contendo Listas.</li>
-            <li><strong>Projeto 3:</strong> Estrutura de página contendo links e imagens. </li>
+            <li><strong>Projeto 1:</strong> Página inicial simples usando HTML.</li>
+            <li><strong>Projeto 2:</strong> Estrutura semântica completa de um site.</li>
+            <li><strong>Projeto 3:</strong> Formulários com validação básica.</li>
         </ol>
 
         <p>Acesse mais conteúdos:</p>
@@ -135,11 +153,11 @@
     <section id="contato">
         <h2>Formulário de Contato</h2>
         <form>
-            <label>Gledson Lima:</label><br>
+            <label>Seu Nome:</label><br>
             <input type="text" name="nome" required><br><br>
 
             <label>Email:</label><br>
-            <input type="email" name="gledsonlima07@gmail.com" required><br><br>
+            <input type="email" name="email" required><br><br>
 
             <label>Mensagem:</label><br>
             <textarea name="mensagem" rows="5"></textarea><br><br>
@@ -150,7 +168,7 @@
 </main>
 
 <footer>
-    <p>Site desenvolvido para avaliação da disciplina de Tecnologias Web.</p>
+    <p>Site desenvolvido como avaliação da disciplina de Tecnologias Web.</p>
 </footer>
 
 </body>
